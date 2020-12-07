@@ -8,12 +8,12 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-/*variable is used to connect the MongoDB database*/
+/*MongoCN is used to connect the MongoDB database*/
 var MongoCN = ConectarDB()
 
 var clientOptions = options.Client().ApplyURI("mongodb://localhost:27017")
 
-/* ConnectDatabase is used to connect the MongoDB database*/
+/* ConectarDB is used to connect the MongoDB database*/
 func ConectarDB() *mongo.Client {
 
 	client, err := mongo.Connect(context.TODO(), clientOptions)
