@@ -13,7 +13,7 @@ var MongoCN = ConectarDB()
 
 var clientOptions = options.Client().ApplyURI("mongodb://localhost:27017")
 
-/* ConectarDB is used to connect the MongoDB database*/
+// ConectarDB is used to connect the MongoDB database*/
 func ConectarDB() *mongo.Client {
 
 	client, err := mongo.Connect(context.TODO(), clientOptions)
@@ -32,7 +32,7 @@ func ConectarDB() *mongo.Client {
 	return client
 }
 
-/* chequeo is used to connect the MongoDB database*/
+// ChequeoConnection is used to connect the MongoDB database*/
 func ChequeoConnection() int {
 	err := MongoCN.Ping(context.TODO(), nil)
 	if err != nil {
