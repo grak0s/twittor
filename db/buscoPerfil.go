@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/twittor/models"
+	"github.com/grak0s/twittor/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )

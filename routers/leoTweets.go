@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/twittor/db"
+	"github.com/grak0s/twittor/db"
 )
 
 /*LeoTweets Leo los tweets */

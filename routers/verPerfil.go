@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/twittor/db"
+	"github.com/grak0s/twittor/db"
 )
 
 //VerPerfil permite extraer los valores del perfil

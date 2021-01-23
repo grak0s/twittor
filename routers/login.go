@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/twittor/db"
-	"github.com/twittor/jwt"
-	"github.com/twittor/models"
+	"github.com/grak0s/twittor/db"
+	"github.com/grak0s/twittor/jwt"
+	"github.com/grak0s/twittor/models"
 )
 
 //Login ruta que valida y genera el jwt

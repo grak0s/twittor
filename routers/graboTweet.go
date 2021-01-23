@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/twittor/db"
-	"github.com/twittor/models"
+	"github.com/grak0s/twittor/db"
+	"github.com/grak0s/twittor/models"
 )
 
 //GraboTweet permite grabar el twiit en la base de datos
