@@ -9,11 +9,11 @@ import (
 	"github.com/grak0s/twittor/db"
 )
 
-//listaUsuarios leo a lista de usuarios
-func listaUsuarios(w http.ResponseWriter, r*http.Request){
-	typeUser:= r.URL.Query().Get("type")
-	page:= r.URL.Query().Get("page")
-	search:= r.URL.Query().Get("type")
+//ListaUsuarios leo a lista de usuarios
+func ListaUsuarios(w http.ResponseWriter, r*http.Request){
+	typeUser	:= r.URL.Query().Get("type")
+	page		:= r.URL.Query().Get("page")
+	search		:= r.URL.Query().Get("search")
 
 	pagTemp, err :=strconv.Atoi(page)
 
