@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/grak0s/twittor/models"
-	"go.mongo.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 //LeoTweetsSeguidores lee los tweets de mis seguidores
@@ -28,8 +28,8 @@ func LeoTweetsSeguidores(ID string, pagina int) ([]models.DevuelvoTweetsSeguidor
 			"foreingField": "userid",
 			"as":"tweet",
 		}})
-
-	condiciones =bson.M(condiciones, bson.M{"$unwind":"$sweet"})
+		
+	condiciones = append(condiciones, bson.M{"$unwind": "$tweet"})
 	condiciones = append(condiciones, bson.M{"$sort": bson.M{"fecha":-1}})
 	condiciones = append(condiciones, bson.M{"$skip":skip})
 	condiciones = append(condiciones, bson.M{"$limit":20})
