@@ -13,7 +13,7 @@ func BajaRelacion(w http.ResponseWriter, r *http.Request) {
 	var t models.Relacion
 	t.UsuarioID = IDUsuario
 	t.UsuarioRelacionID = ID
-
+   
 	status, err := db.BorroRelacion(t)
 	if err != nil {
 		http.Error(w, "Ocurrió un error al intentar borrar relación "+err.Error(), http.StatusBadRequest)
