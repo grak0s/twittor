@@ -10,7 +10,7 @@ import (
 func main() {
 
 	if db.ChequeoConnection() == 0 {
-		log.Fatal("sin conexion a la BD")
+		log.Fatal("SIN CONEXIÓN A LA BD")
 		return
 	}
 
